@@ -48,6 +48,8 @@ public class Main {
 					
 				}
 				System.out.println("\n\n"+String.join(",", codes));
+			}else {
+				System.out.println("\n\nCANCELADA");
 			}
 			
 			System.out.println("\n");
