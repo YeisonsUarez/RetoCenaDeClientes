@@ -36,7 +36,7 @@ public class Main {
 		}
 		
 		for (OutputTableModel outputTable : outputTables) {
-			System.out.print("<"+outputTable.getName()+">");
+			System.out.print("<"+outputTable.getName()+">\n");
 			if(outputTable.getClients().size()>0) {
 				List<String> codes= new ArrayList<String>();
 				for (ClientModel client : outputTable.getClients()) {
@@ -47,12 +47,12 @@ public class Main {
 					}
 					
 				}
-				System.out.println("\n\n"+String.join(",", codes));
+				System.out.println(String.join(",", codes));
 			}else {
-				System.out.println("\n\nCANCELADA");
+				System.out.println("CANCELADA");
 			}
 			
-			System.out.println("\n");
+			//System.out.println("\n");
 		}
 	}
 
